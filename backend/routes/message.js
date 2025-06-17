@@ -23,7 +23,6 @@ router.post('/', async (req, res) => {
     const [botResponse] = await translate.translate(botResponseEn, language);
 
     // Save to MongoDB
-    // const message = "AIzaSyBmAzOM7R-OMawkVpgXXenaGU7yEfxX9n0"
     const message = new Message({
       userMessage,
       botResponse,
